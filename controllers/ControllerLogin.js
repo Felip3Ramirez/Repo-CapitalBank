@@ -1,7 +1,5 @@
-export { usuarios }
-from "../models/modelLogin.js";
-export { expresionesRegulares }
-from "../helpers/expresiones.js";
+export { usuarios } from "../models/modelLogin.js";
+export { expresionesRegulares } from "../helpers/expresiones.js";
 
 export function login(e) {
     e.preventDefault();
