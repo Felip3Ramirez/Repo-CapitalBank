@@ -1,9 +1,12 @@
 import { expresionesRegulares } from "../../../helpers/expresiones.js";
+import{ register} from"../../../controllers/ControllerLogin.js"
 
 let inputs = document.getElementsByTagName('input');
 for (let index = 0; index < inputs.length; index++) {
     inputs[index].addEventListener('keyup', validarFormulario);
 }
+
+document.getElementById("crearCuenta").addEventListener("click", register);
 
 function validarFormulario(e) {
     switch (e.target.name) {
