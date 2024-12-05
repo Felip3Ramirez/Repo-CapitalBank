@@ -1,5 +1,19 @@
 import {usuarios} from "../models/ModelSeguro.js"
 
+var urlSeguro = "http://localhost:3000/modelSeguro";
+var formulario = [];
+function getFormulario(){
+    fetch(urlSeguro)
+    .then(response => response.json())
+    .then(data => {
+        formulario = data;
+        console.log(formulario);
+    })
+    .catch((error)=> console.log(error))
+}
+getFormulario();
+
+
 export function formularioAuto (){
 
     var formularioAutoNombre = document.getElementById("seguro-auto-nombre").value;
@@ -12,7 +26,7 @@ export function formularioAuto (){
         telefono: formularioAutoTelefono,
         modelo: formularioAutoModelo
     };
-    console.log(newFormulario);
+    formularioIngresado(newFormulario)
     
 }
 export function formularioHogar (){
@@ -27,6 +41,13 @@ export function formularioHogar (){
         telefono: formularioHogarTelefono,
         estimado: formularioHogarEstimado
     };
-    console.log(newFormulario);
+    formularioIngresado(newFormulario)
     
+}
+
+function formularioIngresado(newFormulario){
+    fetch (urlSeguro, {
+        method: 'POST',
+        body:JSON.stringify(newFormulario)
+    })
 }

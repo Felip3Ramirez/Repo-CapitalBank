@@ -181,7 +181,7 @@ header {
 }
 
 .asesor {
-    position: relative;
+    position: absolute;
     background-color: #4CAF50;
     /* Color de fondo */
     color: white;

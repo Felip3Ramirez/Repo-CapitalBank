@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrandose</title>
-    <link rel="stylesheet" href="../public/css/register.css">
+    <link rel="stylesheet" href="../css/register.css">
 
 </head>
 
@@ -19,14 +19,15 @@
             <input type="password" placeholder="Confirmar contraseña" id="register-confirmar-contrasena">
             <div class="botones">
                 <button id="crearCuenta">Crear cuenta</button>
-                <button id="iniciarSesion" onclick="window.location.href='Login.html'">Inicie sesión</button>
-                <button id="cerrarModal" onclick="window.location.href='/index.html'">Cerrar</button>
+                <!-- <button id="iniciarSesion" onclick="window.location.href='Login.html'">Inicie sesión</button> -->
+                <a id="iniciarSesion" href="/capitalBank/views/pages/Login.html">Iniciar Sesion</a>
+                <!-- <button id="cerrarModal" onclick="window.location.href='/index.html'">Cerrar</button> -->
+                <a id="cerrarModal" href="/Index.html">Cerrar</a>
             </div>
         </form>
     </div>
     <img src="/capitalBank/views/img/inicioRegistroFondo.jpg" class="imagenRegister">
-    <script type="module" src="../public/js/scriptLogin.js"></script>
-    <script src="/views/public/js/script.js"></script>
+    <script type="module" src="../js/scriptLogin.js"></script>
 </body>
 
 </html>
