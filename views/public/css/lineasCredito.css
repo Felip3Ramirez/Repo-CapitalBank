@@ -1,0 +1,296 @@
+/*EstilosGenerales.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HeaderPrincipal.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+header {
+    background-color: #424242;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-contenedor {
+    background-color: #229799;
+    position: relative;
+    height: 100px;
+    /* ajusta la altura del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloBanco,.contenedorTituloBanco {
+    position: relative;
+    top: -15%;
+    /* ajusta la distancia desde la parte superior */
+    left: 15%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 35px;
+
+}
+
+.slogan {
+    position: relative;
+    top: 25%;
+    /* ajusta la distancia desde la parte inferior */
+    left: -38.5%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 15px;
+}
+
+.botonlogin {
+    border-radius: 10px;
+    border-color: #229799;
+    background-color: #424242;
+    height: 45px;
+    width: 230px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 20px;
+}
+
+.botonPrincipal {
+    position: absolute;
+    top: 18%;
+    left: -5%;
+    z-index: 2;
+    background-color: transparent;
+    width: 110%;
+    height: 110%;
+    border: none;
+}
+
+/*BarraNav.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+.barraNavegacion {
+    background-color: #229799;
+    padding: 1%;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonesBarraNavegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.boton {
+    margin:  5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #229799;
+    color: white;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    padding: 1px;
+    font-size: 18px;
+    flex-grow: 1;
+    width: 180px;
+}
+
+.boton:hover {
+    background-color: #48CFCB;
+}
+/*lineas de credito -----------------------------------------------------------------------------*/
+.contenedorOpciones {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 40px;
+    /* Ocupar la altura completa del viewport */
+    display: flex;
+    justify-content: center;
+    
+    /* Color de fondo para visualizar el área */
+    position: relative;
+    background-image: url(/IMG/deudas.jpg);
+}
+
+.textos {
+    width: 100%;
+    height: 10%;
+    background-color: #229799;
+    text-align: center;   
+    border-top: solid 1PX #b2cecf;
+    border-top: Shadow;
+     
+}
+.textos h1{
+    font-size: 120%;
+    color: white;
+    padding-top: 1%;  
+    
+}
+
+.textos >p{
+    font-size: 120%;
+    color:white;
+}
+
+.opciones {
+    margin: 0%;
+    width: 73%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /*ocupar la siguiente linea si no cabe*/
+    justify-content: space-around;
+    position: absolute;
+    top: 10%;
+    background-color:whitesmoke;
+
+}
+
+section {
+    width: 25%;
+    /* Ajusta este tamaño según tus necesidades */
+    height: 47%;
+    /* Permitir que la altura se ajuste */
+    margin: 0.5%;
+    /* Añadir un poco de margen entre secciones */
+    border: 1px solid #b2cecf;
+    /* Color del borde */
+    border-radius: 4%;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(242, 238, 238, 0.2);
+    /* Sombra del borde */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 0.5s;
+    font-size: 90%;
+    text-align: justify;
+    padding: 1%;
+    
+}
+
+section:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+img{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.selecciones {
+    width: 31%;
+    height: 10%;
+    position: absolute;
+    left: 10%;
+    bottom: 3%;
+    background-color:#229799;
+    border-radius: 10%;
+    transition: 0.5s;
+    font-size: 75%;
+}
+
+.selecciones:hover{
+    background-color: #48CFCB;
+}
+
+.solicitar {
+    width: 30%;
+    height: 10%;
+    position: absolute;
+    right: 10%;
+    bottom: 3%;
+    background-color: #229799;
+    border-radius: 10%;
+    font-size: 75%;
+}
+.solicitar:hover{
+    
+        background-color: #48CFCB; 
+}
+
+.ocultar{
+    width: 15%;
+    height: 20%;
+    position: absolute;
+    right: 10%;
+    bottom: 3%;
+    background-color: #229799;
+    border-radius: 10%;
+}
+
+.informacionAdicional {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    display: none;
+    /* Ocultamos la información adicional por defecto */
+    width: 100px;
+    height: 60px;
+}
+
+.informacionAdicional ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.informacionAdicional li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.informacionAdicional li:last-child {
+    border-bottom: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    display: flex;
+    
+}
+
+.modal.show {
+    display: block;
+}
+.close-modal{ background-color: #229799;
+width: 10%;
+height: auto;
+margin-top: 2%;
+
+
+
+}
+
+
+/*PieDePagina.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+footer {
+    position: absolute;
+    background-color: #424242;
+    width: 100%;
+    height: 100px;
+}

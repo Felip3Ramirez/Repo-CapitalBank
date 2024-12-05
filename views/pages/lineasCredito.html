@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../views/public/css/lineasCredito.css" />
+
+    <title>Lineas De Credito</title>
+</head>
+
+<body>
+    <header>
+        <img src="/views/public/img/cerdoGris.jpg" />
+        <div class="contenedorTituloBanco">
+            <h1 class="tituloBanco">
+                <button class="botonPrincipal" id="PaginaPrincipal" onclick="irAPrincipal()"></button>Capital Bank
+            </h1>
+        </div>
+        <p class="slogan">Tu banco de confianza</p>
+        <button class="botonlogin" id="loginBoton" onclick="irALogin()">
+            Inicio / Registro
+        </button>
+    </header>
+    <div class="barraNavegacion">
+        <nav>
+            <ul>
+                <div class="botonesBarraNavegacion">
+                    
+                    <button class="boton" id="serviciosBoton" onclick="irAServicios()">
+                        <b>Servicios</b>
+                    </button>
+                    <span></span>
+                    <button class="boton" id="lineasDeCreditoBoton" onclick="irALineasCredito()">
+                        <b>Lineas De Credito</b>
+                    </button>
+                    <span></span>
+                    <button class="boton" id="tarjetasDeCreditoBoton" onclick="irATarjetasCredito()">
+                        <b>Tarjetas De Credito</b>
+                    </button>
+                    <span></span>
+                    <button class="boton" id="segurosBoton" onclick="irASeguros()">
+                        <b>Seguros</b>
+                    </button>
+                    <span></span>
+                    <button class="boton" id="empresasBoton" onclick="irAEmpresas()">
+                        <b>Empresas</b>
+                    </button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="contenedorOpciones">
+        <div class="textos">
+            <h1>Lineas de creditos</h1>
+            <p>
+                En Capital Bank tenemos abiertas las puertas para que cumplas tus
+                expectativas con nosotros. Conoce las diversas líneas de crédito y
+                escoge la que más se adapte a tus proyectos
+            </p>
+        </div>
+        <div class="opciones">
+            <section id="educativo">
+                <img src="../public/img/estudiantesSecundario.jpg" alt="" width="100%" height="48%" />
+
+                <h3>Educativo</h3>
+
+                <p>
+                    !invierte en tu futuro Con nuestro crédito educativo, podrás acceder
+                    a la mejor educación y alcanzar tus metas profesionales !no deje que
+                    el costo sea un obstáculo para tus sueños
+                </p>
+
+                <button id="botonbrillante" class="solicitar">Solicitar</button>
+                <button class="selecciones" id="botonEducativo" onclick="showInfo('educativo')">
+                    Más información
+                </button>
+                <div class="informacionAdicional" style="display: none">
+                    <h3>Características</h3>
+                    <p>
+                        Aplica para carreras profesionales, técnicas, tecnólogas o de
+                        posgrado. Financiación hasta el 100% del valor de la matrícula.
+                        Desembolso a nombre de la universidad o institución educativa.
+                        Cuenta con seguro.
+                    </p>
+                    Requisitos
+                    <li>fotocopia de la cédula al 150%</li>
+                    <li>
+                        la copia del recibo de matricula vigentecorrespondiente al periodo
+                        académico a cursar
+                    </li>
+                </div>
+            </section>
+            <section id="libranza">
+                <img src="../public/img/empleadosBancarios.jpg" alt="" width=" 100%" height="48%" />
+
+                <h3>Libranza</h3>
+                <p>
+                    ¿Necesitas dinero extra? ¡Obtén tu crédito de libranza en minutos!
+                    Sin trámites engorrosos y con desembolso inmediato, nuestro crédito
+                    de libranza te permite acceder al dinero que necesitas cuando lo
+                    necesitas. 
+                </p>
+
+                <button class="solicitar">Solicitar</button>
+                <button class="selecciones" id="botonLibranza" onclick="showInfo('libranza')">
+                    Más información
+                </button>
+                <div class="informacionAdicional" style="display: none">
+                    <h3>Beneficios</h3>
+                    <li>Desembolso inmediato.</li>
+                    <li>Sin codeudor.</li>
+                    <li>Cuotas fijas y tasas de interés competitivas.</li>
+                    <li>Descuento directo por nómina.</li>
+
+                    <h3>Requisitos</h3>
+                    <p>
+                        Ingreso mínimo requerido Vehículos: 2.5 SMMLV Ingreso mínimo
+                        requerido Motos: 1.5 SMMLV Edad: Dependientes: De 23 a 69 años e
+                        Independientes: De 25 a 69 años
+                    </p>
+                </div>
+            </section>
+            <section id="hipotecario">
+                <img src="/views/public/img/casa.jpeg" alt="" width=" 100%" height="48%" />
+
+                <h3>Hipotecario</h3>
+
+                <p>
+                    ¡La casa de tus sueños está más cerca! Ofrecemos las mejores tasas
+                    de interés del mercado, plazos flexibles y trámites sencillos.
+                    Además, te asesoramos en cada paso del proceso para que tu
+                    experiencia sea única. ¡Contactanos!
+                </p>
+
+                <button class="selecciones" id="botonHipotecario" onclick="showInfo('hipotecario')">
+                    Más información
+                </button>
+                <button class="solicitar">Solicitar</button>
+                <div class="informacionAdicional" style="display: none">
+                    <h3>Característica</h3>
+                    <p>
+                        Financiación hasta el 70% del valor de la casa o apartamento,
+                        nuevo o usado. La tasa de interés es aplicable al momento del
+                        desembolso, disponible en todas las oficinas. Con un plazo en
+                        pesos: 60 a 240 meses y en UVR: de 60 a 360 meses.
+                    </p>
+                    <h3>Requisitos</h3>
+                    <li>Contar con mínimo 6 meses de antigüedad laboral. Edad</li>
+                    <li>Tener entro 18 y 70 años</li>
+                    <li>No estar reportado</li>
+                </div>
+            </section>
+            <section id="vehiculo">
+                <img src="/views/public/img/vehiculo.jpg" alt="" width=" 100%" height="48%" />
+
+                <h3>Vehiculo</h3>
+
+                <p>
+                    ¡Conduce el auto de tus sueños! Nuestro crédito vehicular te brinda
+                    la libertad de elegir el vehículo que siempre has deseado.
+                </p>
+                <button class="solicitar">Solicitar</button>
+                <button class="selecciones" id="botonVehiculo" onclick="showInfo('vehiculo')">
+                    Más informacion
+                </button>
+                <div class="informacionAdicional" style="display: none">
+                    <h3>Características</h3>
+                    <p>
+                        Monto para vehículo Mínimo de 10 SMMLV y máximo de 350 SMMLV
+                        Financiación para vehículos Hasta 100% nuevos y hasta 90% usados,
+                        hasta 84 meses Monto para moto Mínimo de 3.5 SMMLV y máximo de 30
+                        SMMLV Financiación para motos Hasta 90% para motos nuevas, hasta
+                        72 mese
+                    </p>
+                    <h3>Requisitos</h3>
+                    <li>Ingreso mínimo requerido Vehículos: 2.5 SMMLV</li>
+                    <li>Ingreso mínimo requerido Motos: 1.5 SMMLV</li>
+                    <li>
+                        Edad: Dependientes: De 23 a 69 años e Independientes: De 25 a 69
+                        años Constituir garantía mobiliaria
+                    </li>
+                </div>
+            </section>
+            <section id="libreInversion">
+                <img src="/views/public/img/estudiantesPrimario.jpg" alt="" width="100%" height="48%" />
+
+                <h3>Libre Inversion</h3>
+                <p>
+                    "¡Tus proyectos, tus reglas! Utiliza nuestro crédito libre inversión
+                    para lo que desees: remodelar tu hogar, iniciar un negocio, invertir
+                    en bienes raíces o cualquier otra idea que tengas. ¡Las
+                    posibilidades son infinitas!"
+                </p>
+                <button class="solicitar">Solicitar</button>
+                <button class="selecciones" id="botonLibreInversion" onclick="showInfo('libreInversion')">
+                    Más informacion
+                </button>
+                <div class="informacionAdicional" style="display: none">
+                    <h3>Beneficios</h3>
+                    <p>
+                        Satisface sus necesidades de liquidez, sin importar el destino del
+                        crédito. No genera cobro por estudio de crédito. No requiere
+                        codeudor
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../public/js/script.js"></script>
+    <footer></footer>
+</body>
+
+</html>

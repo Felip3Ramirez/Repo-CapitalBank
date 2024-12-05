@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/transferencias.css">
+    <title>Transferencias electronicas</title>
+</head>
+
+<body>
+    <header>
+        <img src="/views/public/img/cerdoGris.jpg">
+        <div class="contenedorTituloBanco">
+            <h1 class="tituloBanco"> <button class="botonPrincipal" id="paginaPrincipal" onclick="irAPrincipal()"></button>Capital Bank</h1>
+        </div>
+        <p class="slogan">Tu banco de confianza</p>
+        <button class="botonLogin" id="loginBoton" onclick="irALogin()">Inicio / Registro</button>
+    </header>
+    <div class="barraNavegador">
+        <nav>
+            <ul>
+                <div class="botonesBarraNavegador">
+                    
+                    <button class="boton" id="serviciosBoton" onclick="irAServicios()"> <b>Servicios</b></button>
+                    
+                    <button class="boton" id="lineasDeCreditoBoton" onclick="irALineasCredito()"> <b>Lineas De Credito</b></button>
+                    
+                    <button class="boton" id="tarjetasDeCreditoBoton" onclick="irATarjetasCredito()"> <b>Tarjetas De Credito</b></button>
+                    
+                    <button class="boton" id="segurosBoton" onclick="irASeguros()"> <b>Seguros</b></button>
+                    
+                    <button class="boton" id="empresasBoton" onclick="irAEmpresas()"> <b>Empresas</b></button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <img class="imagenTransferencia" src="/views/public/img/transferenciasPortada.jpeg">
+    <div class="contenedorTransferencias">
+        <h2>Tipo De Cuenta</h2>
+        <button class="botonRegresar" onclick="IrAServicios()"> <b> X </b> </button>
+        <section class="tipoCuenta">
+            <input type="radio" name="notificaciones" value="Si"> Ahorros
+            <input type="radio" name="notificaciones" value="No"> Corriente
+        </section>
+        <form class="formularioTransferencia">
+            <h4>Numero De Cuenta</h4>
+            <input type="number" id="numerouenta" required>
+            <h4>Cantidad A Trannsferir</h4>
+            <input type="number" id="contraseña" required>
+        </form>
+    </div>
+    <script src="/views/public/js/script.js"></script>
+    <footer></footer>
+</body>
+
+</html>

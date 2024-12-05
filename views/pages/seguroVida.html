@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/views/public/css/seguros.css">
+    <title>Seguro de Vida</title>
+</head>
+
+<body>
+    <header>
+        <img src="/views/public/img/cerdoGris.jpg" />
+        <div class="contenedorTituloBanco">
+            <h1 class="tituloBanco">
+                <button class="botonPrincipal" id="PaginaPrincipal" onclick="irAPrincipal()"></button>Capital Bank
+            </h1>
+        </div>
+        <p class="slogan">Tu banco de confianza</p>
+        <button class="botonlogin" id="loginBoton" onclick="irALogin()">
+            Inicio / Registro
+        </button>
+    </header>
+    <div class="barraNavegacion">
+        <nav>
+            <ul>
+                <div class="botonesBarraNavegacion">
+                    
+                    <button class="boton" id="serviciosBoton" onclick="irAServicios()">
+                        <b>Servicios</b>
+                    </button>
+                    <span ></span>
+                    <button class="boton" id="lineasDeCreditoBoton" onclick="irALineasCredito()">
+                        <b>Lineas De Credito</b>
+                    </button>
+                    <span ></span>
+                    <button class="boton" id="tarjetasDeCreditoBoton" onclick="irATarjetasCredito()">
+                        <b>Tarjetas De Credito</b>
+                    </button>
+                    <span ></span>
+                    <button class="boton" id="segurosBoton" onclick="irASeguros()">
+                        <b>Seguros</b>
+                    </button>
+                    <span ></span>
+                    <button class="boton" id="empresasBoton" onclick="irAEmpresas()">
+                        <b>Empresas</b>
+                    </button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="contenedorSeguroVida">
+        <h3>Seguros de Vida Capital Bank</h3>
+        <p class="parrafoSeguro">En Capital Bank, entendemos que proteger a tus seres queridos es una prioridad.
+            Nuestros seguros de vida están diseñados para brindarte tranquilidad y seguridad financiera para ti y tu
+            familia, sin importar lo que depare el futuro.</p>
+
+        <div class="targetas">
+            <div class="card">
+                <h5>Seguro de Vida Temporal</h5>
+                <p>Protección flexible durante un período específico, ideal para cubrir deudas o responsabilidades
+                    temporales.
+                </p>
+            </div>
+            <div class="card">
+                <h5>Seguro de Vida Permanente</h5>
+                <p>Cobertura de por vida con opción de acumulación de valor en efectivo para tus objetivos a largo
+                    plazo.</p>
+            </div>
+            <div class="card">
+                <h5>Seguro de Vida Universal</h5>
+                <p>Combina protección con opciones de inversión, ofreciendo flexibilidad y potencial de crecimiento sin
+                    importar donde te encuentres.</p>
+            </div>
+        </div>
+        <div class="cardFinal">
+
+            <ul>
+                <h5>¿Por qué elegir nuestros seguros de vida?</h5>
+                <li>Planes personalizados que se adaptan a tus necesidades y presupuesto</li>
+                <li>Proceso de reclamación rápido y sencillo</li>
+                <li>Asesoramiento experto para ayudarte a elegir la mejor cobertura</li>
+                <li>Opciones de pago flexibles</li>
+                <li>Beneficios adicionales como cobertura por invalidez y enfermedades críticas</li>
+            </ul>
+            <label class="botonCotizar" for="modal">Solicitar Cotizacion</label>
+
+        </div>
+    </section>
+    <input id="modal" type="checkbox">
+    <label class="acesor" for="modal">
+
+        <div class="card">
+            <label class="cerrar" for="modal">X</label>
+            <p>Has seleccionado Seguro de Vida. Un asesor se pondrá en contacto contigo pronto.</p>
+
+        </div>
+
+    </label>
+
+
+
+    <script src="/views/public/js/script.js"></script>
+    <footer>
+    </footer>
+</body>
+
+</html>

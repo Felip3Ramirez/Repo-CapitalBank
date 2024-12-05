@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/views/public/css/seguros.css">
+    <title>Seguro de Auto</title>
+</head>
+
+<body>
+    <header>
+        <img src="/views/public/img/cerdoGris.jpg" />
+        <div class="contenedorTituloBanco">
+            <h1 class="tituloBanco">
+                <button class="botonPrincipal" id="PaginaPrincipal" onclick="irAPrincipal()"></button>Capital Bank
+            </h1>
+        </div>
+        <p class="slogan">Tu banco de confianza</p>
+        <button class="botonlogin" id="loginBoton" onclick="irALogin()">
+            Inicio / Registro
+        </button>
+    </header>
+    <div class="barraNavegacion">
+        <nav>
+            <ul>
+                <div class="botonesBarraNavegacion">
+
+                    <button class="boton" id="serviciosBoton" onclick="irAServicios()">
+                        <b>Servicios</b>
+                    </button>
+
+                    <button class="boton" id="lineasDeCreditoBoton" onclick="irALineasCredito()">
+                        <b>Lineas De Credito</b>
+                    </button>
+
+                    <button class="boton" id="tarjetasDeCreditoBoton" onclick="irATarjetasCredito()">
+                        <b>Tarjetas De Credito</b>
+                    </button>
+
+                    <button class="boton" id="segurosBoton" onclick="irASeguros()">
+                        <b>Seguros</b>
+                    </button>
+
+                    <button class="boton" id="empresasBoton" onclick="irAEmpresas()">
+                        <b>Empresas</b>
+                    </button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+    <section class="contenedorSeguroAuto">
+        <h3>Seguro de Auto Capital Bank</h3>
+        <p class="parrafoSeguro">Protección completa para ti y tu vehículo en cada viaje</p>
+
+        <div class="targetasAutos">
+            <div class="card">
+                <h5>Cobertura Integral</h5>
+                <p>Protección contra daños, robo, responsabilidad civil y más.
+                </p>
+            </div>
+            <div class="card">
+                <h5>Asistencia 24/7</h5>
+                <p>Ayuda en carretera y atención al cliente disponible todo el día.</p>
+            </div>
+            <div class="card">
+                <h5>Proceso de Reclamos Rápido</h5>
+                <p>Gestión eficiente de reclamos para que vuelvas a la carretera pronto.</p>
+            </div>
+            <div class="card">
+                <h5>Descuentos Personalizados</h5>
+                <p>Ahorra con nuestros descuentos por buen conductor y otros beneficios.</p>
+            </div>
+        </div>
+        <div class="cardFinal">
+            <h5>Obten tu Cotizacion Gratuita</h5>
+            <form id="formulario-seguro-auto" action="">
+                <label for="">Nombre Completo</label>
+                <input name="seguro-auto-nombre" id="seguro-auto-nombre" type="text" required
+                    placeholder="Malvin Sanchez Sanchez">
+                <label for="">Correo Electronico</label>
+                <input name="seguro-auto-email" id="seguro-auto-email" type="email" required
+                    placeholder="ejemplo@correo.com">
+                <label for="">Telefono</label>
+                <input name="seguro-auto-telefono" id="seguro-auto-telefono" type="tel" required
+                    placeholder="313648****">
+                <label for="">Modelo del Auto</label>
+                <input name="seguro-auto-modelo" id="seguro-auto-modelo" type="text" required
+                    placeholder="Mazda Premiun 2016">
+                <label id="botonSolicitar" type="button" class="botonCotizar" for="modal">Solicitar Cotizacion</label>
+            </form>
+
+        </div>
+    </section>
+    <input id="modal" type="checkbox">
+    <label class="acesor" for="modal">
+
+        <div class="card">
+            <label class="cerrar" for="modal">X</label>
+            <p>Has seleccionado Seguro de Auto. Un asesor se pondrá en contacto contigo pronto.</p>
+
+        </div>
+
+    </label>
+
+
+
+    <script src="/views/public/js/script.js"></script>
+    <script type="module" src="../public/js/scriptSeguro.js"></script>
+    <footer>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/views/public/css/tarjetas.css">
+    <title>Tarjetas De Credito</title>
+</head>
+
+<body>
+    <header>
+        <img src="/views/public/img/cerdoGris.jpg" />
+        <div class="contenedorTituloBanco">
+            <h1 class="tituloBanco">
+                <button class="botonPrincipal" id="PaginaPrincipal" onclick="irAPrincipal()"></button>Capital Bank
+            </h1>
+        </div>
+        <p class="slogan">Tu banco de confianza</p>
+        <button class="botonlogin" id="loginBoton" onclick="irALogin()">
+            Inicio / Registro
+        </button>
+    </header>
+    <div class="barraNavegacion">
+        <nav>
+            <ul>
+                <div class="botonesBarraNavegacion">
+                    
+                    <button class="boton" id="serviciosBoton" onclick="irAServicios()">
+                        <b>Servicios</b>
+                    </button>
+                    
+                    <button class="boton" id="lineasDeCreditoBoton" onclick="irALineasCredito()">
+                        <b>Lineas De Credito</b>
+                    </button>
+                    
+                    <button class="boton" id="tarjetasDeCreditoBoton" onclick="irATarjetasCredito()">
+                        <b>Tarjetas De Credito</b>
+                    </button>
+                    
+                    <button class="boton" id="segurosBoton" onclick="irASeguros()">
+                        <b>Seguros</b>
+                    </button>
+                    
+                    <button class="boton" id="empresasBoton" onclick="irAEmpresas()">
+                        <b>Empresas</b>
+                    </button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="relleno">
+        <div class="contenedorPrincipal">
+            <h2>Solicita la tarjeta de credito ideal para ti </h2>
+
+            <p>Una tarjeta de crédito es un producto bancario con el que puedes hacer compras nacionales,
+                internacionales o
+                por Internet. Además, te permite hacer avances de dinero en efectivo, es decir que puedes retirar un
+                porcentaje del cupo que tengas aprobado. 
+                En Capital Bank tenemos diferentes tipos de tarjetas de crédito con las que podrás recibir distintos
+                beneficios. ¡Solicita tu opción favorita en nuestros canales digitales u oficinas!</p>
+
+            <a href="solicitar.html">
+                <button class="botonSolicitar">solicitar</button>
+            </a>
+
+        </div>
+        <section>
+            <img src="/views/public/img/solicitaTarjetaPortatil.jpg" alt="" width="300px" height="200px">
+        </section>
+        <div class="tarjetaClasica">
+            <h2>
+                Tarjeta Clásicas
+            </h2>
+            <p>
+                Son las tarjetas más básicas y accesibles. Suelen tener límites de crédito más bajos y ofrecen
+                beneficios
+                limitados
+            </p>
+            <img src="/views/public/img/tarjetaClasica.jpg" alt="">
+        </div>
+        <section class="tarjetaGold">
+            <h1>Tarjeta Gold</h1>
+            <P>
+                Dirigidas a personas con ingresos medios, ofrecen mayores límites de crédito y beneficios adicionales
+                como
+                seguros de viaje, protección de compras y programas de recompensas más atractivos.
+            </P>
+            <img src="/views/public/img/tarjetaGold.PNG" alt="" width="200px" height="200px">
+        </section>
+    </div>
+    <script src="/views/public/js/script.js"></script>
+    <footer>
+    </footer>
+</body>
+
+</html>

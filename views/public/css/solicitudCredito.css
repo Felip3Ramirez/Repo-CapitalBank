@@ -1,0 +1,171 @@
+/*EstilosGenerales.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*HeaderPrincipal.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+header {
+    background-color: #424242;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tituloContenedor {
+    position: relative;
+    height: 100px;
+    /* ajusta la altura del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloBanco {
+    position: relative;
+    top: -15%;
+    /* ajusta la distancia desde la parte superior */
+    left: 15%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 35px;
+}
+
+.slogan {
+    position: relative;
+    top: 25%;
+    /* ajusta la distancia desde la parte inferior */
+    left: -38.5%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 15px;
+}
+
+.botonLogin {
+    border-radius: 10px;
+    border-color: #229799;
+    background-color: #424242;
+    height: 45px;
+    width: 230px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 20px;
+}
+
+.botonPrincipal {
+    position: absolute;
+    top: 18%;
+    left: -5%;
+    z-index: 2;
+    background-color: transparent;
+    width: 110%;
+    height: 110%;
+    border: none;
+}
+
+
+/*BarraNav.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+.barraNavegador {
+    background-color: #229799;
+    padding: 1%;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonesBarraNavegador {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.boton {
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #229799;
+    color: white;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    padding: 1px;
+    font-size: 18px;
+    flex-grow: 1;
+    width: 180px;
+}
+
+.boton:hover {
+    background-color: #48CFCB;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.contenedorPrincipal {
+    max-width: 50%;
+    margin: auto;
+    background: rgb(240, 238, 238);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox-container {
+    margin-bottom: 15px;
+}
+
+button {
+    width: 20%;
+    padding: 10px;
+    background-color: #229799;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #48CFCB;
+}

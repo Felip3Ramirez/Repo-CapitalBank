@@ -1,0 +1,207 @@
+/*EstilosGenerales.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*HeaderPrincipal.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+header {
+    background-color: #424242;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tituloContenedor {
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloBanco,.contenedorTituloBanco {
+    position: relative;
+    top: -15%;
+    left: 15%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 35px;
+}
+
+.slogan {
+    position: relative;
+    top: 25%;
+    left: -38.5%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 15px;
+}
+
+.botonLogin {
+    border-radius: 10px;
+    border-color: #229799;
+    background-color: #424242;
+    height: 45px;
+    width: 230px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.botonPrincipal {
+    position: absolute;
+    top: 18%;
+    left: -5%;
+    z-index: 2;
+    background-color: transparent;
+    width: 110%;
+    height: 110%;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*BarraNav.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+.barraNavegador {
+    background-color: #229799;
+    padding: 1%;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonesBarraNavegador {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.boton {
+    margin: 0 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #229799;
+    color: white;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    padding: 1px;
+    font-size: 18px;
+    flex-grow: 1;
+    width: 180px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #48CFCB;
+}
+
+
+/*Contenido principal.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+.contenedorPrincipal {
+    width: 100%;
+    height: 700px;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-image: url(/IMG/empresa.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxUno,
+.boxDos,
+.boxTres,
+.boxCuatro,
+.boxCinco {
+    background-color: #48CFCB;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.banner {
+    background-color: #48CFCB;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.boxUno {
+    height: 20%;
+    width: 30%;
+}
+
+.boxDos {
+    height: 20%;
+    width: 30%;
+}
+
+.boxTres {
+    height: 20%;
+    width: 30%;
+}
+
+.boxCuatro {
+    height: 20%;
+    width: 32%;
+}
+
+.boxCinco {
+    height: 20%;
+    width: 30%;
+}
+
+.contenedorPrincipal div h2 {
+    padding: 10px;
+}
+
+.contenedorPrincipal div p {
+    padding: 10px;
+}
+
+.asesor {
+    position: relative;
+    background-color: #4CAF50;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    left: 5%;
+    bottom: -10%;
+}
+
+
+/*PieDePagina.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+footer {
+    background-color: #424242;
+    width: 100%;
+    height: 100px;
+}

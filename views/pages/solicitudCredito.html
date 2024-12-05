@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/solicitudCredito.css">
+    <title>Lineas De Credito</title>
+</head>
+
+<body>
+    <header>
+        <img src="/views/public/img/cerdoGris.jpg">
+        <div class="contenedorTituloBanco">
+            <h1 class="tituloBanco"> <button class="botonPrincipal" id="paginaPrincipal" onclick="irAPrincipal()"></button>Capital Bank</h1>
+        </div>
+        <p class="slogan">Tu banco de confianza</p>
+        <button class="botonLogin" id="loginBoton" onclick="irALogin()">Inicio / Registro</button>
+    </header>
+    <div class="barraNavegador">
+        <nav>
+            <ul>
+                <div class="botonesBarraNavegador">
+                    
+                    <button class="boton" id="serviciosBoton" onclick="irAServicios()"><b>Servicios</b></button>
+                    
+                    <button class="boton" id="lineasDeCreditoBoton" onclick="irALineasCredito()"><b>Lineas De Credito</b></button>
+                    
+                    <button class="boton" id="tarjetasDeCreditoBoton" onclick="irATarjetasCredito()"><b>Tarjetas De Credito</b></button>
+                    
+                    <button class="boton" id="segurosBoton" onclick="irASeguros()"><b>Seguros</b></button>
+                    
+                    <button class="boton" id="empresasBoton" onclick="irAEmpresas()"><b>Empresas</b></button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contenedorPrincipal"></div>
+    <h1>Información Personal</h1>
+    <form id="formRegistro">
+        <label for="cedula">Cédula de ciudadanía:</label>
+        <input type="text" id="cedula" name="cedula" placeholder="Ej: 1234567891" required>
+
+        <label for="celular">Número de celular:</label>
+        <input type="tel" id="celular" name="celular" placeholder="Ej: 3124566789" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ej: micorreo@gmail.com" required>
+
+        <label for="confirm-email">Confirma el correo electrónico:</label>
+        <input type="email" id="confirm-email" name="confirm-email" placeholder="Ej: micorreo@gmail.com" required>
+
+        <label for="ingresos">Total ingresos mensuales:</label>
+        <input type="number" id="ingresos" name="ingresos" placeholder="0.0" required>
+
+        <div class="checkbox">
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terms">Acepto el tratamiento de datos y el pacto sobre firmas de acuerdo con las cláusulas propuestas.</label>
+        </div>
+        <button type="submit">Siguiente</button>
+    </form>
+    </div>
+
+    <script src="/views/public/js/script.js"></script>
+    <footer></footer>
+</body>
+
+</html>

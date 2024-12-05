@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../views/public/css/empresas.css">
+    <title>Empresas</title>
+</head>
+
+<body>
+    <header>
+        <img src="../public/img/cerdoGris.jpg">
+        <div class="contenedorTituloBanco">
+            <h1 class="tituloBanco"><button class="botonPrincipal" id="paginaPrincipal" onclick="irAPrincipal()"></button>Capital Bank</h1>
+        </div>
+        <p class="slogan">Tu banco de confianza</p>
+        <button class="botonLogin" id="loginBoton" onclick="IrALogin()">Inicio / Registro</button>
+    </header>
+
+    <div class="barraNavegador">
+        <nav>
+            <ul>
+                <div class="botonesBarraNavegador">
+                    
+                    <button class="boton" id="serviciosBoton" onclick="irAServicios()"> <b>Servicios</b></button>
+                    
+                    <button class="boton" id="lineasDeCreditoBoton" onclick="irALineasCredito()"> <b>Lineas De Credito</b></button>
+                    
+                    <button class="boton" id="tarjetasDeCreditoBoton" onclick="irATarjetasCredito()"> <b>Tarjetas De Credito</b></button>
+                    
+                    <button class="boton" id="segurosBoton" onclick="irASeguros()"> <b>Seguros</b></button>
+                    
+                    <button class="boton" id="empresasBoton" onclick="irAEmpresas()"> <b>Empresas</b></button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <h2>Soluciones Financieras para tu Empresa</h2>
+        <p>En capital bank,entendemos las necesidades unicas de las empresas, ofrecemos una gama completa de servicios financieros diseñados para ayudar a tu negocio a crecer y prosperar.</p>
+    </div>
+    <div class="contenedorPrincipal">
+        <div class="boxUno">
+            <h2>Cuentas Empresariales</h2>
+            <p>Cuentas corriente y de ahorro diseñadas para manejar las finanzas de tu empresa con eficiencia.</p>
+        </div>
+        <div class="boxDos">
+            <h2>Financiamiento comercial</h2>
+            <p>Lineas de credito, prestamos a plazo y financiamiento de equipos para impulsar tu negocio.</p>
+        </div>
+        <div class="boxTres">
+            <h2>Comercio Internacional</h2>
+            <p>Cartas de crédito, financiamiento de exportaciones y servicios de cambio de divisas.</p>
+        </div>
+        <div class="boxCuatro">
+            <h2>Banca en Línea para Empresas</h2>
+            <p>Líneas de crédito, préstamos a plazo y financiamiento de equipos para impulsar tu negocio. Comercio Internacional Cartas de crédito, financiamiento de exportaciones y servicios de cambio de divisas.</p>
+        </div>
+        <div class="boxCinco">
+            <h2>Servicios de Tesorería</h2>
+            <p>Gestión de efectivo, pagos electrónicos y soluciones de liquidez para optimizar tus operaciones.</p>
+        </div>
+    </div>
+    <button class="asesor" onclick="miFuncion()">Contacta a un asesor comercial</button>
+    <script src="/views/public/js/script.js"></script>
+    <footer></footer>
+</body>
+
+</html>

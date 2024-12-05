@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="views/public/css/index.css">
+    <title>Capital Bank</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="views/public/img/cerdoGris.jpg">
+        <div class="contenedorTituloBanco">
+            <h1 class="tituloBanco"> <button class="botonPrincipal" id="paginaPrincipal" onclick="irAPrincipal()"></button>Capital Bank</h1>
+        </div>
+        <p class="slogan">Tu banco de confianza</p>
+        <button class="botonLogin" id="loginBoton" onclick="irALogin()">Inicio / Registro</button>
+    </header>
+    <div class="barraNavegador">
+        <nav>
+            <ul>
+                <div class="botonesBarraNavegador">
+                    
+                    <button class="boton" id="ServiciosBoton" onclick="irAServicios()"> <b>Servicios</b></button>
+                    
+                    <button class="boton" id="lineasDeCreditoBoton" onclick="irALineasCredito()"> <b>Lineas De Credito</b></button>
+                    
+                    <button class="boton" id="tarjetasDeCreditoBoton" onclick="irATarjetasCredito()"> <b>Tarjetas De Credito</b></button>
+                    
+                    <button class="boton" id="segurosBoton" onclick="irASeguros()"> <b>Seguros</b></button>
+                    
+                    <button class="boton" id="empresasBoton" onclick="irAEmpresas()"> <b>Empresas</b></button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <img style="display:flex;height: 100%; width: 100%;" src="views/public/img/fondo.jpg">
+    <script src="views/public/js/Script.js"></script>
+    <footer>
+    </footer>
+</body>
+
+</html>

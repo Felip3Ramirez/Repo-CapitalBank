@@ -1,0 +1,403 @@
+/*EstilosGenerales.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HeaderPrincipal.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+header {
+    background-color: #424242;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-contenedor {
+    background-color: #229799;
+    position: relative;
+    height: 100px;
+    /* ajusta la altura del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloBanco,
+.contenedorTituloBanco {
+    position: relative;
+    top: -15%;
+    /* ajusta la distancia desde la parte superior */
+    left: 15%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 35px;
+
+}
+
+.slogan {
+    position: relative;
+    top: 25%;
+    /* ajusta la distancia desde la parte inferior */
+    left: -38.5%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 15px;
+}
+
+.botonlogin {
+    border-radius: 10px;
+    border-color: #229799;
+    background-color: #424242;
+    height: 45px;
+    width: 230px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 20px;
+}
+
+.botonPrincipal {
+    position: absolute;
+    top: 18%;
+    left: -5%;
+    z-index: 2;
+    background-color: transparent;
+    width: 110%;
+    height: 110%;
+    border: none;
+}
+
+/*BarraNav.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+.barraNavegacion {
+    background-color: #229799;
+    padding: 1%;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonesBarraNavegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.boton {
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #229799;
+    color: white;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    padding: 1px;
+    font-size: 18px;
+    flex-grow: 1;
+    width: 180px;
+}
+
+.boton:hover {
+    background-color: #48CFCB;
+}
+
+/*BotonesSeguros.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+section {
+    background-image: linear-gradient(#9b9a9a95, transparent), url(/views/public/img/fondoSeguros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    height: 750PX;
+    flex-direction: column;
+    margin: 0;
+    gap: 20px;
+    align-items: center;
+    color: #197172;
+    z-index: 1;
+}
+
+section h3 {
+    font-size: 30px;
+    margin: 50px auto 10px 50px;
+    font-weight: bolder;
+}
+
+section .parrafoSeguro {
+    color: #fff;
+    margin: 10px auto 10px 50px;
+    font-weight: 400;
+
+}
+
+.targetaSeguro {
+    width: 60%;
+    box-sizing: content-box;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* border: 1px solid black;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    border: 2px solid #43beba;
+    border-radius: 10px;
+    width: 45%;
+    height: auto;
+    text-decoration: none;
+    color: black;
+    background-color: #48cfcb91;
+    font-weight: 400;
+    transition: ease 0.2s;
+}
+
+a:hover {
+    border: 2px solid #1f6c69;
+    transform: scale(1.1);
+    transition: ease 0.2s;
+}
+
+section div a h5 {
+    padding: 10px;
+    color: #197172;
+    font-size: 20px;
+}
+
+section div a p {
+    padding-left: 10px;
+    color: #ffffff;
+    margin-bottom: 40px;
+
+}
+
+/* SeguroVida.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+.contenedorSeguroVida {
+    background-image: linear-gradient(#33323295, transparent), url(/views/public/img/fondoSeguroVida.jpg);
+    height: auto;
+    width: 100%;
+
+}
+
+.card {
+    border: 2px solid #43beba;
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    text-decoration: none;
+    color: black;
+    background-color: #48cfcb91;
+    font-weight: 400;
+    position: relative;
+}
+
+.cardFinal {
+    border: 2px solid #43beba;
+    border-radius: 10px;
+    width: 70%;
+    height: auto;
+    text-decoration: none;
+    color: black;
+    background-color: #48cfcbc6;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.botonCotizar {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    display: block;
+    border: 2px solid #197172;
+    background-color: #229799;
+    border-radius: 10px;
+    color: rgb(224, 224, 224);
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.botonCotizar:hover {
+    background-color: #2fc1c4;
+
+    transition: ease 0.2s;
+}
+
+#modal {
+    display: none;
+}
+
+#modal:checked~.acesor {
+    display: flex;
+}
+
+.cerrar {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+
+.acesor {
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1f6c6aa5;
+    top: 0;
+    position: fixed;
+    display: none;
+}
+
+.acesor .card {
+    background-color: #48CFCB;
+
+}
+
+.acesor .card p {
+    padding: 30px;
+    background-color: #48CFCB;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.targetas {
+    width: 60%;
+    box-sizing: content-box;
+
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card p,
+.cardFinal p {
+    padding-left: 10px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.card h5 {
+    padding: 10px;
+    color: #197172;
+    font-size: 20px;
+}
+
+.cardFinal h5 {
+    padding: 10px;
+    color: #197172;
+    font-size: 20px;
+}
+
+.cardFinal ul li {
+    margin-top: 2px;
+    margin-left: 30px;
+    color: #ffffff;
+
+}
+
+/* SeguroAuto.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+.contenedorSeguroAuto {
+    background-image: linear-gradient(#33323295, transparent), url(/views/public/img/fondoSeguroAuto.jpg);
+}
+
+.targetasAutos {
+    width: 90%;
+    box-sizing: content-box;
+
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.targetasAutos .card {
+    border: 2px solid #43beba;
+    border-radius: 10px;
+    width: 23%;
+    height: auto;
+    text-decoration: none;
+    color: black;
+    background-color: #48cfcb91;
+    font-weight: 400;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    margin-left: 20px;
+    color: #fff;
+}
+
+input {
+    margin: 0px 80px 0px 20px;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+::placeholder {
+    color: #3c3b3b;
+}
+
+/* SeguroHogar.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+.contenedorSeguroHogar {
+    background-image: linear-gradient(#33323281, transparent), url(/views/public/img/fondoSeguroHogar.jpg);
+}
+
+/* SeguroHogar.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+.contenedorSeguroSalud {
+    background-image: linear-gradient(#33323281, transparent), url(/views/public/img/fondoSeguroSalud.jpg);
+
+}
+
+
+/*PieDePagina.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+footer {
+    background-color: #424242;
+    width: 100%;
+    height: 100px;
+}

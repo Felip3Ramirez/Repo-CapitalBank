@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/notificaciones.css">
+    <title>Capital Bank</title>
+</head>
+
+<body>
+    <header>
+        <img src="/views/public/img/cerdoGris.jpg">
+        <div class="contenedorTituloBanco">
+            <h1 class="tituloBanco"> <button class="botonPrincipal" id="paginaPrincipal" onclick="irAPrincipal()"></button>Capital Bank</h1>
+        </div>
+        <p class="slogan">Tu banco de confianza</p>
+        <button class="botonLogin" id="loginBoton" onclick="irALogin()">Inicio / Registro</button>
+    </header>
+    <div class="barraNavegador">
+        <nav>
+            <ul>
+                <div class="botonesBarraNavegador">
+                   
+                    <button class="boton" id="serviciosBoton" onclick="irAServicios()"><b>Servicios</b></button>
+                    
+                    <button class="boton" id="lineasDeCreditoBoton" onclick="irALineasCredito()"><b>Lineas De Credito</b></button>
+                    
+                    <button class="boton" id="tarjetasDeCreditoBoton" onclick="irATarjetasCredito()"><b>Tarjetas De Credito</b></button>
+                    
+                    <button class="boton" id="segurosBoton" onclick="irASeguros()"><b>Seguros</b></button>
+                    
+                    <button class="boton" id="empresasBoton" onclick="irAEmpresas()"><b>Empresas</b></button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <article>En Capital Bank nos encargamos de notificar el estado de tu transaccion por medio de tu correo electronico</article>
+    <img src="/views/public/img/notificacionCampanita.jpg" alt="Imagen Notificaciones" class="imgenNotificaciones">
+    <form>
+        <label>Desea recibir notificaciones sobre el manejo de su cuenta</label>
+        <section class="opciones">
+            <input type="radio" name="notificaciones" value="Si"> Si
+            <input type="radio" name="notificaciones" value="No"> No
+        </section>
+    </form>
+    <button class="regresarNotificaciones" id="regresar" onclick="irAServicios()"><b>Regresar</b></button>
+    <script src="/views/public/js/script.js"></script>
+    <footer></footer>
+</body>
+
+</html>

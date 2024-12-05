@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/servicios.css">
+    <title>Servicios</title>
+</head>
+
+<body>
+    <header>
+        <img src="/views/public/img/cerdoGris.jpg">
+        <div class="contenedorTituloBanco">
+            <h1 class="TituloBanco"> <button class="botonPrincipal" id="PaginaPrincipal"
+                    onclick="irAPrincipal()"></button>Capital Bank</h1>
+        </div>
+        <p class="slogan">Tu banco de confianza</p>
+        <button class="botonLogin" id="loginBoton" onclick="irALogin()">Inicio / Registro</button>
+    </header>
+    <div class="barraNavegador">
+        <nav>
+            <ul>
+                <div class="botonesBarraNavegador">
+                    <button class="boton" id="serviciosBoton" onclick="irAServicios()"><b>Servicios</b></button>
+                    
+                    <button class="boton" id="lineasDeCreditoBoton" onclick="irALineasCredito()"> <b>Lineas De Credito</b></button>
+                    
+                    <button class="boton" id="tarjetasDeCreditoBoton" onclick="irATarjetasCredito()"><b>Tarjetas De Credito</b></button>
+                    
+                    <button class="boton" id="segurosBoton" onclick="irASeguros()"><b>Seguros</b></button>
+                    
+                    <button class="boton" id="empresasBoton" onclick="irAEmpresas()"><b>Empresas</b></button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contenedorBotones">
+        <img src="/views/public/img/ServiciosPortada.jpg" alt="Imagen de Servicios" class="imagenServicios">
+        <div class="botonesServicios">
+            <button class="botonServicio" id="notificacionTransaccion" onclick="irANotificacion()"> <b>Notificacion De
+                    Transaccion</b></button>
+            <button class="botonServicio" id="transferenciasElectronicas"
+                onclick="irATransferencias()"><b>Transferencias Electronicas</b></button>
+        </div>
+    </div>
+    <script src="/views/public/js/script.js"></script>
+    <footer></footer>
+</body>
+
+</html>

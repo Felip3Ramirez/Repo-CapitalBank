@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/views/public/css/seguros.css">
+    <title>Seguro de Salud</title>
+</head>
+
+<body>
+    <header>
+        <img src="/views/public/img/cerdoGris.jpg" />
+        <div class="contenedorTituloBanco">
+            <h1 class="tituloBanco">
+                <button class="botonPrincipal" id="PaginaPrincipal" onclick="irAPrincipal()"></button>Capital Bank
+            </h1>
+        </div>
+        <p class="slogan">Tu banco de confianza</p>
+        <button class="botonlogin" id="loginBoton" onclick="irALogin()">
+            Inicio / Registro
+        </button>
+    </header>
+    <div class="barraNavegacion">
+        <nav>
+            <ul>
+                <div class="botonesBarraNavegacion">
+                    
+                    <button class="boton" id="serviciosBoton" onclick="irAServicios()">
+                        <b>Servicios</b>
+                    </button>
+                    <span></span>
+                    <button class="boton" id="lineasDeCreditoBoton" onclick="irALineasCredito()">
+                        <b>Lineas De Credito</b>
+                    </button>
+                    <span></span>
+                    <button class="boton" id="tarjetasDeCreditoBoton" onclick="irATarjetasCredito()">
+                        <b>Tarjetas De Credito</b>
+                    </button>
+                    <span></span>
+                    <button class="boton" id="segurosBoton" onclick="irASeguros()">
+                        <b>Seguros</b>
+                    </button>
+                    <span></span>
+                    <button class="boton" id="empresasBoton" onclick="irAEmpresas()">
+                        <b>Empresas</b>
+                    </button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="contenedorSeguroSalud">
+        <h3>Seguro de Salud Capital Bank</h3>
+        <p class="parrafoSeguro">En Capital Bank, entendemos que tu salud y la de tu familia son lo más importante. Nuestro Seguro de Salud está diseñado para brindarte la tranquilidad y el cuidado que mereces, con cobertura integral y acceso a los mejores profesionales médicos.</p>
+
+        <div class="targetasAutos">
+            <div class="card" >
+                <h5>Atención de Emergencia</h5>
+                <p>Cobertura de emergencias las 24 horas, los 7 días de la semana, incluso en el extranjero.
+                </p>
+            </div>
+            <div class="card">
+                <h5>Programas de Bienestar</h5>
+                <p>Acceso a programas de prevención y bienestar para mantener una vida saludable.</p>
+            </div>
+            <div class="card">
+                <h5>Telemedicina</h5>
+                <p>Consultas médicas virtuales desde la comodidad de tu hogar, sin costo adicional.</p>
+            </div >
+            
+        </div>
+        <div class="cardFinal">
+            <h5>Obtén tu cotización personalizada</h5>
+            <p>Nuestros asesores están listos para ayudarte a encontrar el plan perfecto para ti.</p>
+            
+            <label class="botonCotizar" for="modal">Solicitar Cotizacion</label>
+            
+        </div >
+    </section>
+    <input id="modal" type="checkbox">
+    <label  class="acesor" for="modal">
+        
+        <div class="card">
+            <label class="cerrar" for="modal">X</label>
+            <p>Has seleccionado Seguro de Salud. Un asesor se pondrá en contacto contigo pronto.</p>
+
+        </div>
+
+    </label>
+
+    <script src="/views/public/js/script.js"></script>
+    <footer>
+    </footer>
+</body>
+
+</html>
